@@ -15,15 +15,17 @@ public class Main {
             System.out.println("(S)alami        $6.25");
             System.out.println("(T)una          $5.50");
             System.out.println("(D)one");
-            //System.out.println("(Q)uit");
+            System.out.println("(Q)uit");
 
             String choice = input.next();
             choice=choice.toUpperCase();
             option = choice.charAt(0);
             int qty;
             double ttl;
-
-
+            if (option=='Q'){
+                System.out.println("fk u fgt");
+                break;
+            }
             switch (option){
                 case 'H':
                     price = 6.50;
@@ -65,11 +67,7 @@ public class Main {
             if (option!='D'){
                 System.out.println("Would you like to order more?");
             }
-
         }while (option !='D');
         System.out.println("Thank you for choosing Jimmy Johns!");
-
-
-
     }
 }
