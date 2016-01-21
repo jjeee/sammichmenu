@@ -68,6 +68,9 @@ public class Main {
                 System.out.println("Would you like to order more?");
             }
         }while (option !='D');
+        if (option=='Q'){
+            System.out.println("leave me be");
+        }else
         System.out.println("Thank you for choosing Jimmy Johns!");
     }
 }
