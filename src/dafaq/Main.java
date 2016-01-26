@@ -23,7 +23,6 @@ public class Main {
             int qty;
             double ttl;
             if (option=='Q'){
-                System.out.println("fk u fgt");
                 break;
             }
             switch (option){
@@ -60,7 +59,7 @@ public class Main {
                     break;
                 default:
                     ttl = 0;
-                    System.out.println("That's not a choice, stupid. Try again.");
+                    System.out.println("That's not a valid choice. Try again.");
                     break;
             }total+=ttl;
             System.out.printf("Total is $%.2f\n",total);
@@ -69,7 +68,7 @@ public class Main {
             }
         }while (option !='D');
         if (option=='Q'){
-            System.out.println("leave me be");
+            System.out.println("You've canceled ordering.");
         }else
         System.out.println("Thank you for choosing Jimmy Johns!");
     }
